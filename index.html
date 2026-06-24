@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laís & Samuel - Save The Date</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container envelope-container" id="envelopeContainer">
+        <div class="envelope">
+            <div class="envelope-body">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap">
+                    <div class="wax-seal">
+                        <div class="seal-inner">
+                            <span class="seal-text">L&S</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="envelope-front">
+                    <div class="envelope-content">
+                        <div class="floral-corner floral-top-left">✦</div>
+                        <div class="floral-corner floral-top-right">✦</div>
+                        <div class="floral-corner floral-bottom-left">✦</div>
+                        <div class="floral-corner floral-bottom-right">✦</div>
+                        <h1 class="envelope-text">Laís & Samuel</h1>
+                        <p class="envelope-subtitle">Você está convidado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="click-instruction">Clique no selo para abrir</p>
+    </div>
+
+    <div class="letter-container" id="letterContainer">
+        <div class="letter" id="letter">
+            <div class="floral-corner floral-top-left">✻</div>
+            <div class="floral-corner floral-top-right">✻</div>
+            <div class="floral-corner floral-bottom-left">✻</div>
+            <div class="floral-corner floral-bottom-right">✻</div>
+            <div class="letter-content">
+                <div class="letter-header">
+                    <h2 class="letter-title">Save The Date</h2>
+                </div>
+                <div class="letter-body">
+                    <p class="greeting">Laís & Samuel</p>
+                    <p class="date">23 de outubro de 2027</p>
+                    <p class="letter-text">Estamos preparando com muito amor um dia inesquecível e gostaríamos muito de contar com sua presença.</p>
+                    <p class="letter-text">Reserve esta data em sua agenda e confirme sua participação até <strong>23 de maio de 2027</strong>.</p>
+                    <p class="letter-text">Após essa data, finalizaremos nossa lista de convidados e enviaremos os convites oficiais aos presentes confirmados.</p>
+                    <p class="letter-closing">Será uma alegria celebrar com você.</p>
+                </div>
+                <div class="letter-signature">
+                    <p class="signature">Com amor,</p>
+                    <p class="signature-names">Laís & Samuel</p>
+                </div>
+            </div>
+            <button class="confirm-button" id="confirmButton">Confirmar Presença</button>
+        </div>
+    </div>
+
+    <div class="form-overlay" id="formOverlay">
+        <div class="form-container">
+            <button class="close-button" id="closeFormButton">✕</button>
+            <h3 class="form-title">Confirmar Presença</h3>
+            <form class="confirmation-form" id="confirmationForm">
+                <div class="form-group">
+                    <label for="fullName">Nome Completo *</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="companions">Quantidade de Acompanhantes *</label>
+                    <select id="companions" name="companions" required>
+                        <option value="">Selecione</option>
+                        <option value="0">Apenas eu</option>
+                        <option value="1">Eu + 1 acompanhante</option>
+                        <option value="2">Eu + 2 acompanhantes</option>
+                        <option value="3">Eu + 3 acompanhantes</option>
+                        <option value="4">Eu + 4 acompanhantes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone/WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+                </div>
+                <button type="submit" class="submit-button">Enviar Confirmação</button>
+            </form>
+            <p class="form-note">Seus dados estão seguros e serão usados apenas para contacto sobre o casamento.</p>
+        </div>
+    </div>
+
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-container">
+            <div class="success-icon">✓</div>
+            <h3>Confirmação Recebida!</h3>
+            <p>Obrigado por confirmar sua presença.</p>
+            <p>Em breve enviaremos os detalhes oficiais do casamento.</p>
+            <button class="success-button" id="successButton">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
